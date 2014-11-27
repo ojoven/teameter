@@ -24,6 +24,9 @@ Thumbs.db
 .buildpath
 .editorconfig
 .project
+build.xml
+build.properties
+.travis.yml
 .settings/
 *~
 app/webroot/.sass-cache
