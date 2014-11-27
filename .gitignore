@@ -26,4 +26,4 @@ Thumbs.db
 .project
 .settings/
 *~
-app/webroot/.saas-cache
+app/webroot/.sass-cache
