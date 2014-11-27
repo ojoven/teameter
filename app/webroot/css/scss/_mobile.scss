@@ -1,0 +1,55 @@
+@media all and (max-width:768px) {
+
+	/** LAYOUT **/
+	a.logo {
+		font-size:25px;
+		img { width:30px; }
+	}
+	.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+		padding:0;
+	}
+	.navbar-inner {
+		min-height:0;
+	}
+
+	.navbar-fixed-top {
+		margin-bottom:0;
+		position:fixed;
+	}
+
+	.main-container {
+		padding-top:35px;
+	}
+
+	/** GRAPHS **/
+	.position {
+		padding:0px;
+	}
+
+	.bars {
+		clear:both;
+		float:left;
+		margin:10px 0;
+		height:20px;
+		overflow:hidden;
+	}
+
+	.bar {
+		padding:10px 0;
+	}
+
+	.tt-text {
+		border:none;
+		width:auto;
+		padding:0 0 0 5px;
+	}
+
+	.tt-section .text {
+		width:inherit;
+		margin:0px 0px 0px 5px;
+		font-size:16px;
+		float:none;
+		display:inline;
+	}
+
+}
