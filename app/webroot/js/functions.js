@@ -1,6 +1,6 @@
 /** GLOBAL VARS **/
 maxWidthBars = 0;
-widthMultiplier = 0.60;
+widthMultiplier = 0.40;
 woeid = 23424950;
 realTimeUpdateStep = 0;
 sizeMaxLimitedBar = 50;
@@ -124,7 +124,7 @@ function updateStep(data) {
 			widthTweetBar = sizeMaxLimitedBar + "px";
 			$(selector).find('div[class*="bar-tweet"]').hide();
 			$(selector).find('div[class*="bar-retweet"]').hide();
-			$(selector).find('div[class*="bar-max-limited"]').css('width',widthTweetBar);
+			$(selector).find('div[class*="bar-max-limited"]').show().css('width',widthTweetBar);
 			$(selector).find('div[class*="bar-max-limited"]').attr('title',"+" +maxTweetsAllowed + " tweets");
 
 			// Total
@@ -138,6 +138,7 @@ function updateStep(data) {
 			widthTweetBar = multiplier * numTweets + "px";
 			$(selector).find('div[class*="bar-tweet"]').css('width',widthTweetBar);
 			$(selector).find('div[class*="bar-tweet"]').attr('title',numTweets + " tweets");
+			$(selector).find('div[class*="bar-max-limited"]').hide();
 
 			// Retweets
 			var numRetweets = value.count.retweets;

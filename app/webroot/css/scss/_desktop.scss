@@ -144,11 +144,11 @@ a.logo {
 	height:40px;
 	.text {
 		@extend .secondaryfont;
+		display:inline-block;
 		cursor:default;
 		color:#444;
 		font-size:20px;
 		width:115px;
-		float:left;
 		margin:10px 5px;
 		overflow:hidden;
 		text-overflow:ellipsis;
@@ -172,7 +172,7 @@ a.logo {
 
 .bar {
 	padding:20px 0;
-	float:left;
+	display:inline-block;
 	@include transition(all,1s,ease-in-out);
 }
 
@@ -188,6 +188,7 @@ a.logo {
 			background:#ccc;
 		}
 		&.bar-max-limited {
+			display:none;
 			@include border-radius(3px);
 			background:#B22222;
 		}
